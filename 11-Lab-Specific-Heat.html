@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-11-09 Mon 00:22 -->
+<!-- 2020-11-10 Tue 14:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Course Introduction</title>
+<title>Lab - Specific Heat</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Patrick Malsom" />
 <style type="text/css">
@@ -215,39 +215,60 @@
     /*]]>*///-->
 // @license-end
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
-<h1 class="title">Course Introduction</h1>
+<h1 class="title">Lab - Specific Heat</h1>
 <p>
-<iframe width="440" height="335" src="https://www.youtube.com/embed/ZnUkDAsoLAU" frameborder="0" allowfullscreen></iframe>
+In this lab you will measure the specific heat of water using 4 different (and increasingly accurate) calorimeters. For each of these experiments, you will be using the equation for specific heat and assuming that the system is thermally isolated. As a consequence of the conservation of energy (energy cannot be created nor destroyed), all of the energy that is input into the system from the light bulb will be absorbed by the water, making the overall heat exchange zero. For the experiments, please assume that the water absorbs exactly the amount of energy which is emitted by the light bulb, giving the standard equation for calorimetry:
 </p>
 
 <p>
-I look forward to getting to know all of you and giving as much help as possible. The first day of class  I will be holding digital Zoom meetings to meet you and answer any general questions you may have. I expect the meeting will take about 20-30 minutes. Please join me at one of the following times (see First Day email):
-</p>
-
-<ul class="org-ul">
-<li>Tuesday 11am - 11:30am</li>
-<li>Tuesday 2pm - 2:30pm</li>
-<li>Tuesday 9pm - 9:30pm</li>
-</ul>
-
-<p>
-The course will be set up with online videos for lectures and will also include lab work, quizzes and examinations. Additionally, I will have weekly informal video conference Zoom office hours which will serve as an opportunity to discuss course material.  See Syllabus for more information.
+\[\sum {Q} = 0\]
 </p>
 
 <p>
-I look forward to speaking with you over Zoom to support your work and progress in the course.
+Because the water changes temperature but does not change phase, the <b>heat</b> (\(Q\)) is the specific heat:
 </p>
 
 <p>
-Please continue by clicking next below:
+\[Q = m \, c_{water} \, \Delta T\]
+</p>
+
+<p>
+In the experiments, you will need to measure the temperature change and use the given information about the wattage (power) of the light bulb to calculate the heat supplied to the water. If you make a figure of the input heat (Power output of the heating device multiplied by the time) vs the temperature change you will be left with a linear trend which has a slope of (\(\text{slope} = m*c_{water}\)). You are tasked with finding the specific heat of water (\(c_{water}\)).
+</p>
+
+<p>
+Note: The expected answer for the specific heat of water is
+\[c_{water} = 4186 \frac{J}{kg \cdot C^\circ}\]
 </p>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Patrick Malsom</p>
-<p class="date">Created: 2020-11-09 Mon 00:22</p>
+<p class="date">Created: 2020-11-10 Tue 14:21</p>
 </div>
 </body>
 </html>
