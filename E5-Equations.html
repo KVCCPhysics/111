@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-14 Thu 22:25 -->
+<!-- 2021-04-12 Mon 15:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Equations for Exam Five</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Patrick Malsom" />
+<meta name="generator" content="Org Mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -52,7 +52,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -215,6 +215,28 @@
     /*]]>*///-->
 // @license-end
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -222,6 +244,264 @@
 </div>
 <div id="content">
 <h1 class="title">Equations for Exam Five</h1>
+<p>
+\[SOHCAHTOA\]
+\[ax^2 + bx + c =0  \qquad \Rightarrow \qquad x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]
+</p>
+
+<div id="outline-container-org0c0ed68" class="outline-2">
+<h2 id="org0c0ed68">Kinematics</h2>
+<div class="outline-text-2" id="text-org0c0ed68">
+<p>
+\[v = \frac{\Delta x}{\Delta t}\]
+\[a = \frac{\Delta v}{\Delta t}\]
+</p>
+
+<p>
+\[v_{fx} = v_{ix} + a_x \, t\]
+\[x_{f} = x_{i} + v_{ix}\,t + \frac12 a_x \, t^2\]
+\[v_{fx}^2 = v_{ix}^2 + 2a_x (x_f - x_i)\]
+</p>
+
+<p>
+\[v_{fy} = v_{iy} + a_y \, t\]
+\[y_{f} = y_{i} + v_{iy}\,t + \frac12 a_y \, t^2\]
+\[v_{fy}^2 = v_{iy}^2 + 2a_y (y_f - y_i)\]
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org388a834" class="outline-2">
+<h2 id="org388a834">Forces</h2>
+<div class="outline-text-2" id="text-org388a834">
+<p>
+\[\sum \vec{F} = m \vec{a}\]
+\[F_g = G \frac{m \, M}{r^2}\]
+\[f = \mu F_N\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6b32427" class="outline-2">
+<h2 id="org6b32427">Work</h2>
+<div class="outline-text-2" id="text-org6b32427">
+<p>
+\[W = F \, d \, \cos(\theta)\]
+\[W_{net} = \Delta E = \Delta KE + \Delta PE\]
+</p>
+
+<p>
+\[KE = \tfrac12 m v^2\]
+\[PE_g = mgh\]
+\[PE_s = \tfrac12 k x^2\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga9282c2" class="outline-2">
+<h2 id="orga9282c2">Momentum</h2>
+<div class="outline-text-2" id="text-orga9282c2">
+<p>
+\[\vec{\p} = m\,\vec{v}\]
+</p>
+
+<p>
+\[\vec{I} = \vec{F}~\Delta t\]
+</p>
+
+<p>
+\[\Delta \vec{p} = 0\]
+\[m_1 \vec{v}_{1i} + m_2 \vec{v}_{2i} = m_1 \vec{v}_{1f} +m_2 \vec{v}_{2f}\]
+</p>
+
+<p>
+\[\tfrac12 m_1 v_{1i}^2 + \tfrac12 m_2 v_{2i}^2 = \tfrac12 m_1 v_{1f}^2 +   \tfrac12 m_2 v_{2f}^2\]
+\[v_{1i} + v_{1f} = v_{2i} + v_{2f}\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcf73ae4" class="outline-2">
+<h2 id="orgcf73ae4">Rotation</h2>
+<div class="outline-text-2" id="text-orgcf73ae4">
+<p>
+\[\omega_f = \omega_i + \alpha \, t\]
+\[\theta_f = \theta_i + \omega_i \, t + \tfrac12 \alpha \, t^2\]
+\[\omega_f^2 = \omega_i^2 + 2 \alpha (\theta_f - \theta_i)\]
+</p>
+
+
+<p>
+\[x \rightarrow \theta\]
+\[v \rightarrow \omega\]
+\[a \rightarrow \alpha\]
+\[F \rightarrow \tau\]
+\[m \rightarrow I\]
+</p>
+
+<p>
+\[x=r\theta \qquad v = r \omega \qquad a = r \alpha\]
+\[a_{c} = v^2/r\]
+\[F_{c} = m~v^2/r\]
+\[KE_{rot} = \tfrac12 I \omega^2\]
+</p>
+
+<p>
+\[\tau = r~F~\sin(\theta)\]
+\[\sum \vec{\tau} = I \vec{\alpha}\]
+</p>
+</div>
+
+<div id="outline-container-orgea58d8b" class="outline-3">
+<h3 id="orgea58d8b">Moment of Inertia</h3>
+<div class="outline-text-3" id="text-orgea58d8b">
+<p>
+\[I = \sum m r^2\]
+</p>
+
+<p>
+\[\text{Solid sphere}  = 2/5~M R^2\]
+\[\text{Hollow sphere}  = 2/3~MR^2\]
+\[\text{Solid cylinder}  = 1/2~MR^2\]
+\[\text{Hollow cylinder}  = MR^2\]
+\[\text{Rod about center}= 1/12~ MR^2\]
+\[\text{Rod about end}= 1/3~ MR^2\]
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org19e9f73" class="outline-2">
+<h2 id="org19e9f73">Thermal Physics</h2>
+<div class="outline-text-2" id="text-org19e9f73">
+<p>
+\[\sum Q = 0  \text{(for an isolated system)}\]
+\[Q = m c \Delta T\]
+\[Q = \pm m L\]
+</p>
+
+<p>
+\[c_{ice}=2090 J/kg^\circ C\]
+\[c_{water}=4186 J/kg^\circ C\]
+\[c_{steam}=2010 J/kg^\circ C\]
+\[L_{ice,water}=3.33*10^5~J/kg\]
+\[L_{water,steam}=2.26*10^6~J/kg\]
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org35635ab" class="outline-2">
+<h2 id="org35635ab">Laws of Thermo</h2>
+<div class="outline-text-2" id="text-org35635ab">
+<p>
+\[PV = nRT\]
+</p>
+
+<p>
+\[\Delta U = Q + W\]
+</p>
+
+<p>
+\[C_v = \frac{3}{2} R \qquad \qquad C_p = C_v+R\]
+</p>
+
+<p>
+\[R = 8.314\tfrac{J}{mol\, K} \quad 101,000Pa = 1atm \quad 1000L = 1m^3\]
+</p>
+
+<p>
+\[e=\frac{W}{|Q_{h}|} = 1 - \frac{|Q_c|}{|Q_h|}\]
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Process</th>
+<th scope="col" class="org-left">$&Delta; U $</th>
+<th scope="col" class="org-left">$Q</th>
+<th scope="col" class="org-left">\(W\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Isobaric</td>
+<td class="org-left">\(n C_v \Delta T\)</td>
+<td class="org-left">\(n C_p \Delta T\)</td>
+<td class="org-left">\(-P \Delta V\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Adiabatic</td>
+<td class="org-left">\(n C_v \Delta T\)</td>
+<td class="org-left">\(0\)</td>
+<td class="org-left">\(\Delta U\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Isovolumetric</td>
+<td class="org-left">\(n C_v \Delta T\)</td>
+<td class="org-left">\(\Delta U\)</td>
+<td class="org-left">\(0\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Isothermal</td>
+<td class="org-left">\(0\)</td>
+<td class="org-left">\(-W\)</td>
+<td class="org-left">\(-nRT\ln (V_f / V_i)\)</td>
+</tr>
+
+<tr>
+<td class="org-left">General</td>
+<td class="org-left">\(n C_v \Delta T\)</td>
+<td class="org-left">\(\Delta U - W\)</td>
+<td class="org-left">\((PV Area)\)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgc704c85" class="outline-2">
+<h2 id="orgc704c85">Vibrations and Waves</h2>
+<div class="outline-text-2" id="text-orgc704c85">
+<p>
+\[F_s = -kx\]
+\[v_s = \pm \sqrt{\frac{k}{m} ( A^2 - x^2)}\]
+\[\frac12 k A^2 = \frac12 m v^2 + \frac12 kx^2\]
+\[\omega = 2 \pi f = \sqrt{\frac{k}{m}}\]
+\[T = \frac{1}{f}\]
+\[x = A \cos(2 \pi f t)\]
+\[v = \lambda f\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org69b54da" class="outline-2">
+<h2 id="org69b54da">Sound</h2>
+<div class="outline-text-2" id="text-org69b54da">
+<p>
+\[\text{Speed of sound =} 340 ~ m/s\]
+\[f_O = f_S \left(\frac{v+v_O}{v-v_S} \right)\]
+\[f_b = | f_2 - f_1 |\]
+\[\text{open-open}\qquad f_n = \frac{n\,v}{2\,L} \qquad (n=1,2,3,\ldots)\]
+\[\text{open-closed}\qquad f_n = \frac{n\,v}{4\,L} \qquad (n=1,3,5,\ldots)\]
+</p>
+</div>
+</div>
 </div>
 </body>
 </html>
