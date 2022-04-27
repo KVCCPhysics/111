@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-09-07 Tue 21:02 -->
+<!-- 2020-11-12 Thu 19:50 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Physics 111</title>
+<meta name="generator" content="Org mode" />
 <meta name="author" content="Patrick Malsom" />
-<meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,9 +31,8 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -42,21 +41,21 @@
   pre.src {
     position: relative;
     overflow: auto;
+    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    top: -8px;
-    right: 12px;
+    background-color: white;
+    top: -10px;
+    right: 10px;
     padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
+    border: 1px solid black;
   }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
+  pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -192,22 +191,42 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
+  /*]]>*/-->
 </style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
 </head>
 <body>
-<div id="preamble" class="status">
-<style type="text/css">body{ max-width:800px; margin: auto;font-family: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;}table.center{margin-left:auto; margin-right:auto;}</style>
-</div>
-<div id="content" class="content">
+<div id="content">
 <h1 class="title">Physics 111</h1>
 <ul class="org-ul">
 <li><a href="./00-Start-Here.html">Start Here</a></li>
 <li><a href="./00-Learning-Canvas.html">Learning Canvas</a></li>
 <li><a href="./00-Course-Introduction.html">Course Introduction</a></li>
 </ul>
-<div id="outline-container-org21c9b12" class="outline-2">
-<h2 id="org21c9b12">Introduction and Maths</h2>
-<div class="outline-text-2" id="text-org21c9b12">
+<div id="outline-container-orge29ee20" class="outline-2">
+<h2 id="orge29ee20"><span class="section-number-2">1</span> Units Trigonometry and Vectors</h2>
+<div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li><a href="./01-What-is-Physics.html">What is Physics?</a></li>
 <li><a href="./01-Units-of-Measurement.html">Units of Measurement</a></li>
@@ -215,9 +234,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org5ee306b" class="outline-2">
-<h2 id="org5ee306b">Motion in One Dimension</h2>
-<div class="outline-text-2" id="text-org5ee306b">
+<div id="outline-container-org1162de3" class="outline-2">
+<h2 id="org1162de3"><span class="section-number-2">2</span> Motion in One Dimension</h2>
+<div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="./02-Vectors.html">Vectors</a></li>
 <li><a href="./02-Displacement-Velocity-and-Acceleration.html">Displacement Velocity and Acceleration</a></li>
@@ -225,18 +244,18 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org463c6e6" class="outline-2">
-<h2 id="org463c6e6">Motion in Two Dimensions</h2>
-<div class="outline-text-2" id="text-org463c6e6">
+<div id="outline-container-org5cc52f5" class="outline-2">
+<h2 id="org5cc52f5"><span class="section-number-2">3</span> Motion in two Dimensions</h2>
+<div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li><a href="./03-Displacement-Velocity-and-Acceleration-in-2-Dimensions.html">Displacement Velocity and Acceleration in 2 Dimensions</a></li>
 <li><a href="./03-Motion-in-2-Dimensions.html">Motion in 2 Dimensions</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf75f330" class="outline-2">
-<h2 id="orgf75f330">Newton’s Laws of Motion</h2>
-<div class="outline-text-2" id="text-orgf75f330">
+<div id="outline-container-org7952b32" class="outline-2">
+<h2 id="org7952b32"><span class="section-number-2">4</span> Newton’s Laws of Motion</h2>
+<div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li><a href="./04-Forces.html">Forces</a></li>
 <li><a href="./04-Free-Body-Diagrams.html">Free Body Diagrams</a></li>
@@ -244,9 +263,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org05eb89c" class="outline-2">
-<h2 id="org05eb89c">Energy</h2>
-<div class="outline-text-2" id="text-org05eb89c">
+<div id="outline-container-orgf106716" class="outline-2">
+<h2 id="orgf106716"><span class="section-number-2">5</span> Energy</h2>
+<div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li><a href="./05-Work.html">Work</a></li>
 <li><a href="./05-Energy-Conservation.html">Energy Conservation</a></li>
@@ -254,9 +273,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orga1561d6" class="outline-2">
-<h2 id="orga1561d6">Momentum, Impulse, and Collisions</h2>
-<div class="outline-text-2" id="text-orga1561d6">
+<div id="outline-container-orga1f7535" class="outline-2">
+<h2 id="orga1f7535"><span class="section-number-2">6</span> Momentum, Impulse, and Collisions</h2>
+<div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li><a href="./06-Momentum.html">Momentum</a></li>
 <li><a href="./06-Collisions-in-1D.html">Collisions in 1D</a></li>
@@ -264,9 +283,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf169075" class="outline-2">
-<h2 id="orgf169075">Rotational Motion and Gravitation</h2>
-<div class="outline-text-2" id="text-orgf169075">
+<div id="outline-container-org4a7defc" class="outline-2">
+<h2 id="org4a7defc"><span class="section-number-2">7</span> Rotational Motion and Gravitation</h2>
+<div class="outline-text-2" id="text-7">
 <ul class="org-ul">
 <li><a href="./07-Rotational-Motion.html">Rotational Motion</a></li>
 <li><a href="./07-Centripetal-Acceleration.html">Centripetal Acceleration</a></li>
@@ -274,9 +293,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org8c193cb" class="outline-2">
-<h2 id="org8c193cb">Rotational Equilibrium and Dynamics</h2>
-<div class="outline-text-2" id="text-org8c193cb">
+<div id="outline-container-org47a6a9d" class="outline-2">
+<h2 id="org47a6a9d"><span class="section-number-2">8</span> Rotational Equilibrium and Dynamics</h2>
+<div class="outline-text-2" id="text-8">
 <ul class="org-ul">
 <li><a href="./08-Torque.html">Torque</a></li>
 <li><a href="./08-Rotational-Dynamics.html">Rotational Dynamics</a></li>
@@ -284,111 +303,33 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org717daf9" class="outline-2">
-<h2 id="org717daf9">Fluids and Solids</h2>
+<div id="outline-container-org2992685" class="outline-2">
+<h2 id="org2992685"><span class="section-number-2">9</span> Fluids and Solids</h2>
 </div>
-<div id="outline-container-org01de7c1" class="outline-2">
-<h2 id="org01de7c1">Thermal Physics</h2>
-<div class="outline-text-2" id="text-org01de7c1">
+<div id="outline-container-orgd068262" class="outline-2">
+<h2 id="orgd068262"><span class="section-number-2">10</span> Thermal Physics</h2>
+</div>
+<div id="outline-container-orgf884a1e" class="outline-2">
+<h2 id="orgf884a1e"><span class="section-number-2">11</span> Energy in thermal Processe</h2>
+<div class="outline-text-2" id="text-11">
 <ul class="org-ul">
-<li><a href="./10-Temperature-and-Thermal-Equilibrium.html">Temperature and Thermal Equilibrium</a></li>
-<li><a href="./10-Ideal-Gas.html">Ideal Gas</a></li>
-<li><a href="./10-Kinetic-Theory-of-Gasses.html">Kinetic Theory of Gasses</a></li>
+<li><a href="./11-Lab-Specific-Heat.html">Lab - Specific Heat of Water</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc1d16d0" class="outline-2">
-<h2 id="orgc1d16d0">Energy in thermal Processes</h2>
-<div class="outline-text-2" id="text-orgc1d16d0">
-<ul class="org-ul">
-<li><a href="./11-Calorimetry.html">Calorimetry</a></li>
-</ul>
+<div id="outline-container-orge726f2e" class="outline-2">
+<h2 id="orge726f2e"><span class="section-number-2">12</span> The Laws of thermodynamics</h2>
+</div>
+<div id="outline-container-orgb884b2f" class="outline-2">
+<h2 id="orgb884b2f"><span class="section-number-2">13</span> Vibrations and Waves</h2>
+</div>
+<div id="outline-container-orgb96f31b" class="outline-2">
+<h2 id="orgb96f31b"><span class="section-number-2">14</span> Sound</h2>
 </div>
 </div>
-<div id="outline-container-org0fd6b02" class="outline-2">
-<h2 id="org0fd6b02">The Laws of thermodynamics</h2>
-<div class="outline-text-2" id="text-org0fd6b02">
-<ul class="org-ul">
-<li><a href="./11-First-Law-of-Thermodynamics.html">First Law of Thermodynamics</a></li>
-<li><a href="./11-Heat-Engines.html">Heat Engines</a></li>
-<li><a href="./11-Second-Law-of-Thermodynamics.html">Second Law of Thermodynamics</a></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgb342cb0" class="outline-2">
-<h2 id="orgb342cb0">Vibrations and Waves</h2>
-<div class="outline-text-2" id="text-orgb342cb0">
-<ul class="org-ul">
-<li><a href="./13-Oscillators.html">Oscillators</a></li>
-<li><a href="./13-Energy-of-an-Oscillator.html">Energy of an Oscillator</a></li>
-<li><a href="./13-Wave-Motion.html">Wave Motion</a></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org76fd945" class="outline-2">
-<h2 id="org76fd945">Sound</h2>
-<div class="outline-text-2" id="text-org76fd945">
-<ul class="org-ul">
-<li><a href="./14-Sound.html">Sound</a></li>
-<li><a href="./14-Doppler-Effect-and-Beats.html">Doppler Effect and Beats</a></li>
-<li><a href="./14-Standing-Waves.html">Standing Waves</a></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org8deb161" class="outline-2">
-<h2 id="org8deb161">Pivot Interactives</h2>
-<div class="outline-text-2" id="text-org8deb161">
-<ul class="org-ul">
-<li><a href="./01-Pivot-Intro-to-Pivot.html">Pivot 01 - Intro to Pivot Interactives</a></li>
-<li><a href="./02-Pivot-Billiard-Ball-Race.html">Pivot 02 - Billiard Ball Race</a></li>
-<li><a href="./03-Pivot-Motion-in-2D.html">Pivot 03 - Motion in 2D</a></li>
-<li><a href="./04-Pivot-Forces-on-an-Inclined-Plane.html">Pivot 04 - Forces on an Inclined Plane</a></li>
-<li><a href="./05-Pivot-Conservation-of-Energy.html">Pivot 05 - Conservation of Energy</a></li>
-<li><a href="./06-Pivot-Dart-Collision.html">Pivot 06 - Dart Collision</a></li>
-<li><a href="./07-Pivot-Rotational-Motion.html">Pivot 07 - Rotational Motion</a></li>
-<li><a href="./08-Pivot-Torque.html">Pivot 08 - Torque</a></li>
-<li><a href="./09-Pivot-Specific-Heat.html">Pivot 09 - Specific Heat of Water</a></li>
-<li><a href="./11-Pivot-Simple-Harmonic-Oscillator.html">Pivot 11 - Simple Harmonic Oscillator</a></li>
-<li><a href="./12-Pivot-Speed-of-Sound.html">Pivot 12 - Speed of Sound</a></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org7cd1780" class="outline-2">
-<h2 id="org7cd1780">Exams</h2>
-<div class="outline-text-2" id="text-org7cd1780">
-<ul class="org-ul">
-<li><a href="./E1-Instructions.html">Instructions for Exam One</a></li>
-<li><a href="./E1-Equations.html">Equations for Exam One</a></li>
-<li><a href="./E2-Instructions.html">Instructions for Exam Two</a></li>
-<li><a href="./E2-Equations.html">Equations for Exam Two</a></li>
-<li><a href="./E3-Instructions.html">Instructions for Exam Three</a></li>
-<li><a href="./E3-Equations.html">Equations for Exam Three</a></li>
-<li><a href="./E4-Instructions.html">Instructions for Exam Four</a></li>
-<li><a href="./E4-Equations.html">Equations for Exam Four</a></li>
-<li><a href="./E5-Instructions.html">Instructions for Exam Five</a></li>
-<li><a href="./E5-Equations.html">Equations for Exam Five</a></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgeab7688" class="outline-2">
-<h2 id="orgeab7688">Laboratory</h2>
-<div class="outline-text-2" id="text-orgeab7688">
-<ul class="org-ul">
-<li><a href="./Lab01-Intro-and-Maths.html">Lab 01 - Introduction and Maths</a></li>
-<li><a href="./Lab03-Motion-in-Two-Dimensions.html">Lab 03 - Motion in Two Dimensions</a></li>
-<li><a href="./Lab04-Forces.html">Lab 04 - Forces</a></li>
-<li><a href="./Lab05-Work-and-Energy.html">Lab 05 - Work and Energy</a></li>
-<li><a href="./Lab06-Momentum.html">Lab 06 - Momentum</a></li>
-<li><a href="./Lab07-Rotational-Motion.html">Lab 07 - Rotational Motion</a></li>
-<li><a href="./Lab08-Torque.html">Lab 08 - Torque</a></li>
-<li><a href="./Lab09-Calorimetry.html">Lab 09 - Calorimetry</a></li>
-<li><a href="./Lab12-Sound.html">Lab 12 - Sound</a></li>
-</ul>
-</div>
-</div>
+<div id="postamble" class="status">
+<p class="author">Author: Patrick Malsom</p>
+<p class="date">Created: 2020-11-12 Thu 19:50</p>
 </div>
 </body>
 </html>
