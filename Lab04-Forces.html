@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-04-27 Wed 11:03 -->
+<!-- 2025-09-02 Tue 01:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Lab 04 - Forces</title>
 <meta name="author" content="Patrick Malsom" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -191,30 +191,41 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
 <style type="text/css"> blockquote {background:#eee; padding: 3px 10px; border: 1px solid; }</style>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -226,18 +237,17 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgb496790">Experiment 1: Balancing an unknown force</a></li>
-<li><a href="#orga38a0ab">Experiment 2: Find equilibrium with two unknown masses</a></li>
+<li><a href="#orgd9c7b5d">Experiment 1: Balancing an unknown force</a></li>
+<li><a href="#org8499487">Experiment 2: Find equilibrium with two unknown masses</a></li>
 </ul>
 </div>
 </div>
 <p>
 We will determine the precise masses needed to place the Force Table into equilibrium. This is done using a Free Body Diagram and Summation of the Forces to solve for the unknown forces.
 </p>
-
-<div id="outline-container-orgb496790" class="outline-2">
-<h2 id="orgb496790">Experiment 1: Balancing an unknown force</h2>
-<div class="outline-text-2" id="text-orgb496790">
+<div id="outline-container-orgd9c7b5d" class="outline-2">
+<h2 id="orgd9c7b5d">Experiment 1: Balancing an unknown force</h2>
+<div class="outline-text-2" id="text-orgd9c7b5d">
 <ol class="org-ol">
 <li><p>
 Place the pulleys on the force table to the angles given below. Place a mass hanger on each of the strings add the below masses to the hanger. Record the known masses and angles and calculate the forces due to the individual masses.
@@ -306,17 +316,16 @@ Calculate the mass which is needed to offset this overall force, making the tota
 </p>
 
 
-<div id="org7ed1496" class="figure">
+<div id="orgc7ef802" class="figure">
 <p><img src="lab4_part1.png" alt="lab4_part1.png" width="400px" />
 </p>
 </div></li>
 </ol>
 </div>
 </div>
-
-<div id="outline-container-orga38a0ab" class="outline-2">
-<h2 id="orga38a0ab">Experiment 2: Find equilibrium with two unknown masses</h2>
-<div class="outline-text-2" id="text-orga38a0ab">
+<div id="outline-container-org8499487" class="outline-2">
+<h2 id="org8499487">Experiment 2: Find equilibrium with two unknown masses</h2>
+<div class="outline-text-2" id="text-org8499487">
 <ol class="org-ol">
 <li><p>
 Now lets solve a harder problem :) In this part two of the masses (\(m_2\) and \(m_3\)) are unknown. one of the masses is known (m1) and all three angles are known.
@@ -370,7 +379,7 @@ Add your calculated masses to the hangers and observe if the system returns to e
 </p>
 
 
-<div id="org312bf21" class="figure">
+<div id="org34c2f0d" class="figure">
 <p><img src="lab4_part2.png" alt="lab4_part2.png" width="400px" />
 </p>
 </div></li>

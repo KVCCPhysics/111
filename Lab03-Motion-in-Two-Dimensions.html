@@ -3,13 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-04-27 Wed 11:03 -->
+<!-- 2025-09-02 Tue 01:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Lab 03 - Motion in Two Dimensions</title>
-<meta name="author" content="Patrick Malsom" />
+<title>&lrm;</title>
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -191,67 +190,77 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
-<style type="text/css"> blockquote {background:#eee; padding: 3px 10px; border: 1px solid; }</style>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
 <style type="text/css">body{ max-width:800px; margin: auto;font-family: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;}table.center{margin-left:auto; margin-right:auto;}</style>
 </div>
 <div id="content" class="content">
-<h1 class="title">Lab 03 - Motion in Two Dimensions</h1>
-<div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#orgb356656">Experiment 1: Horizontal Shot</a></li>
-<li><a href="#orgea04f40">Experiment 2: Predicting the motion</a></li>
-</ul>
-</div>
-</div>
+<div id="outline-container-org1a6600c" class="outline-2">
+<h2 id="org1a6600c">Lab 03 - Motion in Two Dimensions</h2>
+<div class="outline-text-2" id="text-org1a6600c">
 <p>
-The purpose of this laboratory is to gain a better grasp of ballistics via hands on application of equations to determine the initial velocity of a projectile. The purpose of this laboratory is to use our knowledge of ballistic motion to predict a real world outcome. We will use the equations of motion to predict exactly where a ball will land on the floor without measuring first!
+In this lab, you will use a ball launcher to explore ballistic motion through application of the kinematic equations. First you will launch a ball horizontally and calculate the initial velocity of the projectile. Then you will use the calculated initial velocity to predict the range of the projectile when launched at an incline.
 </p>
 
-<div id="outline-container-orgb356656" class="outline-2">
-<h2 id="orgb356656">Experiment 1: Horizontal Shot</h2>
-<div class="outline-text-2" id="text-orgb356656">
+<p>
+\[ x_f = x_i + v_i \, t + \tfrac12 a\, t^2\]
+\[ v_f = v_i + a \, t\]
+\[ v_f^2 =  v_i^2  +2\, a (x_f - x_i)\]
+</p>
+</div>
+</div>
+<div id="outline-container-orgfde79e9" class="outline-2">
+<h2 id="orgfde79e9">Experiment 1: Horizontal Shot</h2>
+<div class="outline-text-2" id="text-orgfde79e9">
 <ol class="org-ol">
 <li>The Ballistic Pendulum must be placed on a table edge. Make sure that the lanucher is firing as close as possible to horizontal.</li>
 
-<li>Locate a clear line of fire. A clear line of fire is defined as at least 3.0m free of people and pointed to the wall.</li>
+<li>Locate a clear line of fire at least 3 meters free of other classmates and other objects.</li>
 
 <li><p>
-Measure how high the ball is from the floor in meters. Measure from the bottom of the ball to the floor.
+Measure the initial hight of the ball from the floor in meters. Take a moment to think where on the ball you should take this measurement to find the overall change in height.
 </p>
 
 <p>
-Height (\(\Delta y\)):____________________
+Height (\(\Delta y = y_f - y_i\)): \rule{5cm}{0.15mm}
 </p></li>
 
-<li>Ready the Ballistic Pendulum for firing and fire a ranging shot.</li>
+<li>Ready the Ballistic Pendulum for firing and fire a practice shot which will show you how far the ball will travel.</li>
 
 <li>Place a piece of white paper on the floor at the approximate impact point. Tape the white paper to the floor and fire the Ballistic Pendulum three times.</li>
 
@@ -260,13 +269,16 @@ Measure, in meters, the range of the three shots from where the projectile leave
 </p>
 
 <p>
-\(x_1\):___________ \(~~~x_2\):___________ \(~~~x_3\):___________ \(~~~x_{ave}\):____________
+\(x_1\): \rule{3cm}{0.15mm}
+\(~~~x_2\): \rule{3cm}{0.15mm}
+\(~~~x_3\): \rule{3cm}{0.15mm}
+\(~~~x_{ave}\): \rule{3cm}{0.15mm}
 </p></li>
 
 <li>Use your knowledge of Kinematics to find the initial velocity in the X and Y direction. Find the initial Vector velocity. Find the final velocity in the X and Y direction. Find the final Vector velocity.</li>
 </ol>
 
-<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" class="center">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
@@ -276,42 +288,50 @@ Measure, in meters, the range of the three shots from where the projectile leave
 </colgroup>
 <tbody>
 <tr>
-<td class="org-left">\(x_i=\qquad\qquad\)</td>
-<td class="org-left">\(y_i=\qquad\qquad\)</td>
+<td class="org-left">\(x_i=\hspace{50mm}\)</td>
+<td class="org-left">\(y_i=\hspace{50mm}\)</td>
 </tr>
 
 <tr>
-<td class="org-left">\(x_f=\qquad\)</td>
-<td class="org-left">\(y_f=\qquad\)</td>
+<td class="org-left">\(x_f=\)</td>
+<td class="org-left">\(y_f=\)</td>
 </tr>
 
 <tr>
-<td class="org-left">\(v_{ix}=\qquad\)</td>
-<td class="org-left">\(v_{iy}=\qquad\)</td>
+<td class="org-left">\(v_{ix}=\)</td>
+<td class="org-left">\(v_{iy}=\)</td>
 </tr>
 
 <tr>
-<td class="org-left">\(v_{fx}=\qquad\)</td>
-<td class="org-left">\(v_{fy}=\qquad\)</td>
+<td class="org-left">\(v_{fx}=\)</td>
+<td class="org-left">\(v_{fy}=\)</td>
 </tr>
 
 <tr>
-<td class="org-left">\(a_x=\qquad\)</td>
-<td class="org-left">\(a_y=\qquad\)</td>
+<td class="org-left">\(a_x=\)</td>
+<td class="org-left">\(a_y=\)</td>
 </tr>
 
 <tr>
-<td class="org-left">\(t=\qquad\)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\hspace{30mm}t=\)</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
 
-<div id="outline-container-orgea04f40" class="outline-2">
-<h2 id="orgea04f40">Experiment 2: Predicting the motion</h2>
-<div class="outline-text-2" id="text-orgea04f40">
+<p>
+\newpage
+</p>
+</div>
+</div>
+<div id="outline-container-org934c4ed" class="outline-2">
+<h2 id="org934c4ed">Experiment 2: Predicting the motion</h2>
+<div class="outline-text-2" id="text-org934c4ed">
 <ol class="org-ol">
 <li>Loosen the bolts on the launcher and reposition the launcher to an incline between \(15^\circ\) and \(25^\circ\).</li>
 
@@ -320,13 +340,13 @@ Measure the vertical distance the ball will drop from the indicated point on the
 </p>
 
 <p>
-Height:______________________
+Height: \rule{5cm}{0.15mm}
 </p></li>
 
 <li>Calculate the Range the ball will travel using the initial velocity solved for in Part 1.</li>
 </ol>
 
-<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" class="center">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
@@ -336,32 +356,37 @@ Height:______________________
 </colgroup>
 <tbody>
 <tr>
-<td class="org-left">\(x_i=\qquad\qquad\)</td>
-<td class="org-left">\(y_i=\qquad\qquad\)</td>
+<td class="org-left">\(x_i=\hspace{50mm}\)</td>
+<td class="org-left">\(y_i=\hspace{50mm}\)</td>
 </tr>
 
 <tr>
-<td class="org-left">\(x_f=\qquad\)</td>
-<td class="org-left">\(y_f=\qquad\)</td>
+<td class="org-left">\(x_f=\)</td>
+<td class="org-left">\(y_f=\)</td>
 </tr>
 
 <tr>
-<td class="org-left">\(v_{ix}=\qquad\)</td>
-<td class="org-left">\(v_{iy}=\qquad\)</td>
+<td class="org-left">\(v_{ix}=\)</td>
+<td class="org-left">\(v_{iy}=\)</td>
 </tr>
 
 <tr>
-<td class="org-left">\(v_{fx}=\qquad\)</td>
-<td class="org-left">\(v_{fy}=\qquad\)</td>
+<td class="org-left">\(v_{fx}=\)</td>
+<td class="org-left">\(v_{fy}=\)</td>
 </tr>
 
 <tr>
-<td class="org-left">\(a_x=\qquad\)</td>
-<td class="org-left">\(a_y=\qquad\)</td>
+<td class="org-left">\(a_x=\)</td>
+<td class="org-left">\(a_y=\)</td>
 </tr>
 
 <tr>
-<td class="org-left">\(t=\qquad\)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\hspace{30mm}t=\)</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 </tbody>
@@ -377,7 +402,10 @@ Measure, in meters, the range of three shots from where the projectile leaves th
 </p>
 
 <p>
-\(x_1\):___________ \(x_2\):___________ \(x_3\):___________ \(x_{ave}\):____________
+\(x_1\): \rule{3cm}{0.15mm}
+\(~~~x_2\): \rule{3cm}{0.15mm}
+\(~~~x_3\): \rule{3cm}{0.15mm}
+\(~~~x_{ave}\): \rule{3cm}{0.15mm}
 </p></li>
 
 <li>Compare your average range to your predicted range.</li>
@@ -388,18 +416,18 @@ Measure, in meters, the range of three shots from where the projectile leaves th
 </p>
 
 <p>
-Percent Error:_____________
+Percent Error: \rule{5cm}{0.15mm}
 </p>
-
-<p>
-Questions:
-</p>
-
+</div>
+<div id="outline-container-org87116a5" class="outline-3">
+<h3 id="org87116a5">Questions:</h3>
+<div class="outline-text-3" id="text-org87116a5">
 <ol class="org-ol">
 <li>Would knowing the radius of the ball refine your value for initial velocity?</li>
 
 <li>Would knowing the mass of the ball improve your calculations?</li>
 </ol>
+</div>
 </div>
 </div>
 </div>

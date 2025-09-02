@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-04-27 Wed 11:03 -->
+<!-- 2025-09-02 Tue 01:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Displacement Velocity And Acceleration (Ch 2.1 - 2.2)</title>
 <meta name="author" content="Patrick Malsom" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -191,29 +191,40 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -221,10 +232,9 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">Displacement Velocity And Acceleration (Ch 2.1 - 2.2)</h1>
-
-<div id="outline-container-org0e2c3b5" class="outline-2">
-<h2 id="org0e2c3b5">Displacement:</h2>
-<div class="outline-text-2" id="text-org0e2c3b5">
+<div id="outline-container-org748a691" class="outline-2">
+<h2 id="org748a691">Displacement:</h2>
+<div class="outline-text-2" id="text-org748a691">
 <p>
 The position of an object is described using the variable \(x\). The first quantity to study is related to the position of the object, it is known as the displacement \(\Delta x\). The displacement is the <b>difference</b> between the positions:
 </p>
@@ -238,10 +248,9 @@ Note: the distance is not necessarily equal to the displacement. The distance ac
 </p>
 </div>
 </div>
-
-<div id="outline-container-org810dd23" class="outline-2">
-<h2 id="org810dd23">Velocity:</h2>
-<div class="outline-text-2" id="text-org810dd23">
+<div id="outline-container-org03c52f0" class="outline-2">
+<h2 id="org03c52f0">Velocity:</h2>
+<div class="outline-text-2" id="text-org03c52f0">
 <p>
 The next quantity, known as the velocity, describes the rate of change of position. This is a fancy mathematical way to say “how fast are you moving?”.
 </p>
@@ -255,10 +264,9 @@ I like to read this equation in English as the following phrase: “the velocity
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgb697e81" class="outline-2">
-<h2 id="orgb697e81">Acceleration:</h2>
-<div class="outline-text-2" id="text-orgb697e81">
+<div id="outline-container-org282fb54" class="outline-2">
+<h2 id="org282fb54">Acceleration:</h2>
+<div class="outline-text-2" id="text-org282fb54">
 <p>
 the final quantity to study in this chapter is the acceleration.  it is very easy to misunderstand what the acceleration does. the acceleration is the rate of change of the velocity.
 </p>

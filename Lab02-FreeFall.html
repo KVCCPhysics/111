@@ -3,13 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-04-27 Wed 11:03 -->
+<!-- 2025-09-02 Tue 01:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Lab 2 - Free Fall</title>
-<meta name="author" content="Patrick Malsom" />
+<title>&lrm;</title>
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -191,72 +190,63 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
-<style type="text/css"> blockquote {background:#eee; padding: 3px 10px; border: 1px solid; }</style>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
 <style type="text/css">body{ max-width:800px; margin: auto;font-family: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;}table.center{margin-left:auto; margin-right:auto;}</style>
 </div>
 <div id="content" class="content">
-<h1 class="title">Lab 2 - Free Fall</h1>
-<div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#orgd9a32b7">1. Purpose</a></li>
-<li><a href="#orge1b18f3">2. Part 1: Objects with different mass</a></li>
-<li><a href="#org3f5108d">3. Part 2: Use kinematic equations to calculate gravitational acceleration</a></li>
-<li><a href="#org9d75abd">4. Part 3: Predicting free fall (use \(g = 9.8~m/s^2\))</a></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgd9a32b7" class="outline-2">
-<h2 id="orgd9a32b7"><span class="section-number-2">1.</span> Purpose</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-org2b95806" class="outline-2">
+<h2 id="org2b95806">Lab 2 - Free Fall</h2>
+<div class="outline-text-2" id="text-org2b95806">
 <p>
 The purpose of this laboratory is to examine the acceleration of gravity due to the earth. You will use the kinematic equations to find an experimental value for the gravitational acceleration and then use the kinematic equations to predict the time of flight of a thrown projectile.
 </p>
-
-<p>
-\[\text{percent error} = \frac{| \text{experimental value} - \text{accepted value}|}{\text{accepted value}}\]
-</p>
 </div>
-</div>
-
-<div id="outline-container-orge1b18f3" class="outline-2">
-<h2 id="orge1b18f3"><span class="section-number-2">2.</span> Part 1: Objects with different mass</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgc9e0050" class="outline-4">
+<h4 id="orgc9e0050">Part 1: Objects with different mass</h4>
+<div class="outline-text-4" id="text-orgc9e0050">
 <ol class="org-ol">
-<li>Obtain a meter stick, a timer, and 3 projectiles (ping-pong ball, yellow plastic ball and metal ball).</li>
+<li>Obtain a meter stick, a stopwatch (can be your phone), and 3 projectiles (lightweight ping-pong ball, medium weight yellow plastic ball, and a heavy metal ball).</li>
 
 <li>Have one group memeber drop a ball, starting with the lightest, from a height of 2 meters. At the same time the other group members will record the time it takes for the ball to reach the floor. Make 6 measurements of this time for each of the balls and find their average. Finally measure the mass of each ball in kilograms.</li>
 </ol>
 
-<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" class="center">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
@@ -281,12 +271,12 @@ The purpose of this laboratory is to examine the acceleration of gravity due to 
 <thead>
 <tr>
 <th scope="col" class="org-left">&#xa0;</th>
-<th scope="col" class="org-left">trial 1</th>
-<th scope="col" class="org-left">trial 2</th>
-<th scope="col" class="org-left">trial 3</th>
-<th scope="col" class="org-left">trial 4</th>
-<th scope="col" class="org-left">trial 5</th>
-<th scope="col" class="org-left">trial 6</th>
+<th scope="col" class="org-left">Trial 1</th>
+<th scope="col" class="org-left">Trial 2</th>
+<th scope="col" class="org-left">Trial 3</th>
+<th scope="col" class="org-left">Trial 4</th>
+<th scope="col" class="org-left">Trial 5</th>
+<th scope="col" class="org-left">Trial 6</th>
 <th scope="col" class="org-left">Average time (s)</th>
 <th scope="col" class="org-left">Mass (kg)</th>
 </tr>
@@ -331,32 +321,34 @@ The purpose of this laboratory is to examine the acceleration of gravity due to 
 </table>
 
 
-<ol class="org-ol">
-<li>Does the time it takes for the ball to reach the floor depend on the
-mass of the object? What can you say about the gravitational
-acceleration of the planet earth?</li>
-</ol>
-</div>
-</div>
+<p>
+Question: Does the time to impact change for the different balls? What should the answer be from lecture? What can you say about the gravitational acceleration of the planet earth?
+</p>
 
-<div id="outline-container-org3f5108d" class="outline-2">
-<h2 id="org3f5108d"><span class="section-number-2">3.</span> Part 2: Use kinematic equations to calculate gravitational acceleration</h2>
-<div class="outline-text-2" id="text-3">
+<p>
+Question: Can you think of any reasons that the lighter ball would take more time to reach the ground than the heavier ball? Would this effect change based on the distance that the ball falls and the shape of the ball?
+</p>
+</div>
+</div>
+<div id="outline-container-org8ec076d" class="outline-4">
+<h4 id="org8ec076d">Part 2: Use kinematic equations to calculate gravitational acceleration</h4>
+<div class="outline-text-4" id="text-org8ec076d">
 <ol class="org-ol">
-<li>Now you will use the kinematic equations to calculate the acceleration as a funtion of time elapsed</li>
-</ol>
+<li><p>
+Now you will use the kinematic equations to calculate the acceleration as a funtion of time elapsed
+</p>
 
 <p>
 \[x_f = x_i + v_i t + 1/2 a t^2\]
 \[v_f = v_i + at\]
 \[v_f^2 = v_i^2 +2a(x_f-x_i)\]
+</p></li>
+
+<li><p>
+Drop the plastic ball from 3 different heights between eye level and the height of the ceiling (you might need to stand on something or move to the stairwell down the hall, please be careful!). One of the group members should release the ball and the other members should measure the time it takes for the ball to fall and hit the floor. Record these times in the table below.
 </p>
 
-<ol class="org-ol">
-<li>Drop the plastic ball from 3 different heights between eye level and the height of the ceiling (you might need to stand on something or move to the stairwell down the hall, please be careful!). One of the group members should release the ball and the other members should measure the time it takes for the ball to fall and hit the floor. Record these times in the table below.</li>
-</ol>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" class="center">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
@@ -406,29 +398,31 @@ acceleration of the planet earth?</li>
 </tbody>
 </table>
 
-<ol class="org-ol">
+<p>
+\[\text{percent error} = \frac{| \text{experimental value} - \text{accepted value}|}{\text{accepted value}}\]
+</p></li>
+
 <li>Use the kinematic equations to calculate the experimental value of acceleration in the table. (First write down all of the known quantities and then calculate acceleration). Is the acceleration constant for all of the trials?</li>
 
 <li>Calculate the percentage error from the accepted value of gravitational acceleration of \(9.81~m/s^2\). The equation used to calculate percentage error is given at the top of the worksheet.</li>
 </ol>
 </div>
 </div>
-
-<div id="outline-container-org9d75abd" class="outline-2">
-<h2 id="org9d75abd"><span class="section-number-2">4.</span> Part 3: Predicting free fall (use \(g = 9.8~m/s^2\))</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-orgc43f00e" class="outline-4">
+<h4 id="orgc43f00e">Part 3: Predicting free fall (use \(g = 9.8~m/s^2\))</h4>
+<div class="outline-text-4" id="text-orgc43f00e">
 <ol class="org-ol">
-<li>In the final part of the experiment, you will use the kinematic equations to predict the motion of the projectile. One group member will again be tossing the ball and the others will be timing. This time, the ball should be thrown upward from your waist to eye level and then let the ball fall all the way to the floor. Make a sketch of this drawing below (remember to include your coordinate system):</li>
+<li value="1">In the final part of the experiment, you will use the kinematic equations to predict the motion of the projectile. One group member will again be tossing the ball and the others will be timing. This time, the ball should be thrown upward from your waist to eye level and then let the ball fall all the way to the floor. Make a sketch of this drawing below (remember to include your coordinate system):</li>
 </ol>
 
 
 <ol class="org-ol">
-<li><p>
+<li value="2"><p>
 Calculate the initial velocity the ball must be thrown with in order to have the maximum height at eye level. Remember to think about your coordinate system!
 </p>
 
 <p>
-\(v_i\) =______________
+\(v_i\) = \rule{5cm}{0.15mm}
 </p></li>
 
 <li><p>
@@ -436,13 +430,13 @@ Using this initial velocity and the kinematic equations, calculate the time it w
 </p>
 
 <p>
-\(t_{\text{theory}}\) =_______________
+\(t_{\text{theory}}\) = \rule{5cm}{0.15mm}
 </p></li>
 
 <li>Perform the experiment measure the time to impact. Make 3 measurements of this time. Take the average of the times and calculate the percentage error from the theoretical time.</li>
 </ol>
 
-<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" class="center">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
@@ -478,18 +472,23 @@ Using this initial velocity and the kinematic equations, calculate the time it w
 
 
 <p>
-\(t_{\text{experiment}}\) =___________
+\(t_{\text{experiment}}\) = \rule{5cm}{0.15mm}
 </p>
 
 <ol class="org-ol">
-<li><p>
+<li value="5"><p>
 Calculate the percent error between the theoretical time and the experimental time. Does this make you confident that you can calculate how an object will accelerate on earth using the kinematic equations?
 </p>
 
 <p>
-Percent error =___________
+Percent error = \rule{5cm}{0.15mm}
+</p>
+
+<p>
+\[\text{percent error} = \frac{| \text{experimental value} - \text{accepted value}|}{\text{accepted value}}\]
 </p></li>
 </ol>
+</div>
 </div>
 </div>
 </div>

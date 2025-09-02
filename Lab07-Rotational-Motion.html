@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-04-27 Wed 11:03 -->
+<!-- 2025-09-02 Tue 01:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Lab 06 - Rotational Motion</title>
 <meta name="author" content="Patrick Malsom" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -191,30 +191,41 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
 <style type="text/css"> blockquote {background:#eee; padding: 3px 10px; border: 1px solid; }</style>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -226,18 +237,17 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgc067c64">Experiment 1: Rotational Kinematics</a></li>
-<li><a href="#org8e778b5">Experiment 2: Centripetal Acceleration</a></li>
+<li><a href="#org7a0ca1c">Experiment 1: Rotational Kinematics</a></li>
+<li><a href="#org1319579">Experiment 2: Centripetal Acceleration</a></li>
 </ul>
 </div>
 </div>
 <p>
 This lab investigates the centripetal force of a mass in uniform circular motion. You will find the force required to stretch a spring and then use the rotating arm to stretch the spring the same distance, which gives the magnitude centripetal force.
 </p>
-
-<div id="outline-container-orgc067c64" class="outline-2">
-<h2 id="orgc067c64">Experiment 1: Rotational Kinematics</h2>
-<div class="outline-text-2" id="text-orgc067c64">
+<div id="outline-container-org7a0ca1c" class="outline-2">
+<h2 id="org7a0ca1c">Experiment 1: Rotational Kinematics</h2>
+<div class="outline-text-2" id="text-org7a0ca1c">
 <p>
 As you may have noticed, this system includes non-conservative work, and therefore the swinging mass slows down over time. In this part of the lab you will calculate the approximate angular acceleration of the system.
 </p>
@@ -407,10 +417,9 @@ Now lets apply (rotational) kinematics to predict the motion! Use the above init
 </ol>
 </div>
 </div>
-
-<div id="outline-container-org8e778b5" class="outline-2">
-<h2 id="org8e778b5">Experiment 2: Centripetal Acceleration</h2>
-<div class="outline-text-2" id="text-org8e778b5">
+<div id="outline-container-org1319579" class="outline-2">
+<h2 id="org1319579">Experiment 2: Centripetal Acceleration</h2>
+<div class="outline-text-2" id="text-org1319579">
 <ol class="org-ol">
 <li>Attach the paper clip and string to the hanging mass. Attach the other end of the string to the mass hanger and hang the string over the table edge using the pulley. Place mass onto the hanger until the bob stretches to 18.0cm.</li>
 </ol>

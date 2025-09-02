@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-04-27 Wed 11:03 -->
+<!-- 2025-09-02 Tue 01:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Equations for Exam Two</title>
 <meta name="author" content="Patrick Malsom" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -191,29 +191,40 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -225,10 +236,9 @@
 \[SOHCAHTOA\]
 \[ax^2 + bx + c =0  \qquad \Rightarrow \qquad x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]
 </p>
-
-<div id="outline-container-orgd1ffdc1" class="outline-2">
-<h2 id="orgd1ffdc1">Kinematics</h2>
-<div class="outline-text-2" id="text-orgd1ffdc1">
+<div id="outline-container-org85b7ef7" class="outline-2">
+<h2 id="org85b7ef7">Kinematics</h2>
+<div class="outline-text-2" id="text-org85b7ef7">
 <p>
 \[v = \frac{\Delta x}{\Delta t}\]
 \[a = \frac{\Delta v}{\Delta t}\]
@@ -247,11 +257,9 @@
 </p>
 </div>
 </div>
-
-
-<div id="outline-container-org8e49c51" class="outline-2">
-<h2 id="org8e49c51">Forces</h2>
-<div class="outline-text-2" id="text-org8e49c51">
+<div id="outline-container-orgf838a9f" class="outline-2">
+<h2 id="orgf838a9f">Forces</h2>
+<div class="outline-text-2" id="text-orgf838a9f">
 <p>
 \[\sum \vec{F} = m \vec{a}\]
 \[F_g = G \frac{m \, M}{r^2}\]
@@ -259,10 +267,9 @@
 </p>
 </div>
 </div>
-
-<div id="outline-container-org60feedd" class="outline-2">
-<h2 id="org60feedd">Work</h2>
-<div class="outline-text-2" id="text-org60feedd">
+<div id="outline-container-org812633e" class="outline-2">
+<h2 id="org812633e">Work</h2>
+<div class="outline-text-2" id="text-org812633e">
 <p>
 \[W = F \, d \, \cos(\theta)\]
 \[W_{net} = \Delta E = \Delta KE + \Delta PE\]
@@ -275,10 +282,9 @@
 </p>
 </div>
 </div>
-
-<div id="outline-container-orga071a1e" class="outline-2">
-<h2 id="orga071a1e">Momentum</h2>
-<div class="outline-text-2" id="text-orga071a1e">
+<div id="outline-container-org21cf715" class="outline-2">
+<h2 id="org21cf715">Momentum</h2>
+<div class="outline-text-2" id="text-org21cf715">
 <p>
 \[\vec{p} = m\,\vec{v}\]
 </p>

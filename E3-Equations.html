@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-04-27 Wed 11:03 -->
+<!-- 2025-09-02 Tue 01:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Equations for Exam Three</title>
 <meta name="author" content="Patrick Malsom" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -191,29 +191,40 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -225,10 +236,9 @@
 \[SOHCAHTOA\]
 \[ax^2 + bx + c =0  \qquad \Rightarrow \qquad x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]
 </p>
-
-<div id="outline-container-org470178b" class="outline-2">
-<h2 id="org470178b">Kinematics</h2>
-<div class="outline-text-2" id="text-org470178b">
+<div id="outline-container-org8c29433" class="outline-2">
+<h2 id="org8c29433">Kinematics</h2>
+<div class="outline-text-2" id="text-org8c29433">
 <p>
 \[v = \frac{\Delta x}{\Delta t}\]
 \[a = \frac{\Delta v}{\Delta t}\]
@@ -247,11 +257,9 @@
 </p>
 </div>
 </div>
-
-
-<div id="outline-container-org6d62442" class="outline-2">
-<h2 id="org6d62442">Forces</h2>
-<div class="outline-text-2" id="text-org6d62442">
+<div id="outline-container-org605c737" class="outline-2">
+<h2 id="org605c737">Forces</h2>
+<div class="outline-text-2" id="text-org605c737">
 <p>
 \[\sum \vec{F} = m \vec{a}\]
 \[F_g = G \frac{m \, M}{r^2}\]
@@ -259,10 +267,9 @@
 </p>
 </div>
 </div>
-
-<div id="outline-container-org39170e4" class="outline-2">
-<h2 id="org39170e4">Work</h2>
-<div class="outline-text-2" id="text-org39170e4">
+<div id="outline-container-org52a855a" class="outline-2">
+<h2 id="org52a855a">Work</h2>
+<div class="outline-text-2" id="text-org52a855a">
 <p>
 \[W = F \, d \, \cos(\theta)\]
 \[W_{net} = \Delta E = \Delta KE + \Delta PE\]
@@ -275,10 +282,9 @@
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgddc0745" class="outline-2">
-<h2 id="orgddc0745">Momentum</h2>
-<div class="outline-text-2" id="text-orgddc0745">
+<div id="outline-container-org95d2f28" class="outline-2">
+<h2 id="org95d2f28">Momentum</h2>
+<div class="outline-text-2" id="text-org95d2f28">
 <p>
 \[\vec{p} = m\,\vec{v}\]
 </p>
@@ -298,10 +304,9 @@
 </p>
 </div>
 </div>
-
-<div id="outline-container-org014b0a1" class="outline-2">
-<h2 id="org014b0a1">Rotation</h2>
-<div class="outline-text-2" id="text-org014b0a1">
+<div id="outline-container-orge6065c0" class="outline-2">
+<h2 id="orge6065c0">Rotation</h2>
+<div class="outline-text-2" id="text-orge6065c0">
 <p>
 \[\omega_f = \omega_i + \alpha \, t\]
 \[\theta_f = \theta_i + \omega_i \, t + \tfrac12 \alpha \, t^2\]
@@ -329,10 +334,9 @@
 \[\sum \vec{\tau} = I \vec{\alpha}\]
 </p>
 </div>
-
-<div id="outline-container-org70e6eb9" class="outline-3">
-<h3 id="org70e6eb9">Moment of Inertia</h3>
-<div class="outline-text-3" id="text-org70e6eb9">
+<div id="outline-container-org0965c38" class="outline-3">
+<h3 id="org0965c38">Moment of Inertia</h3>
+<div class="outline-text-3" id="text-org0965c38">
 <p>
 \[I = \sum m r^2\]
 </p>

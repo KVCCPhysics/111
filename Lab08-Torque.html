@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-04-27 Wed 11:03 -->
+<!-- 2025-09-02 Tue 01:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Lab 08 - Torque</title>
 <meta name="author" content="Patrick Malsom" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -191,30 +191,41 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
 <style type="text/css"> blockquote {background:#eee; padding: 3px 10px; border: 1px solid; }</style>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -226,17 +237,16 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgdf41e7c">Purpose</a></li>
-<li><a href="#orgd948395">Procedure Part 1</a></li>
-<li><a href="#org3e5146c">Procedure Part 2</a></li>
-<li><a href="#orge7b3ceb">Procedure Part 3</a></li>
+<li><a href="#orgb82d6e1">Purpose</a></li>
+<li><a href="#org49b32bd">Procedure Part 1</a></li>
+<li><a href="#org4a242e0">Procedure Part 2</a></li>
+<li><a href="#org571f33a">Procedure Part 3</a></li>
 </ul>
 </div>
 </div>
-
-<div id="outline-container-orgdf41e7c" class="outline-2">
-<h2 id="orgdf41e7c">Purpose</h2>
-<div class="outline-text-2" id="text-orgdf41e7c">
+<div id="outline-container-orgb82d6e1" class="outline-2">
+<h2 id="orgb82d6e1">Purpose</h2>
+<div class="outline-text-2" id="text-orgb82d6e1">
 <p>
 We will investigate several configurations of a massive beam in static equilibrium. This experiment will examine how the torque on the system can be used to calculate forces acting on the system. In first experiment, you will calculate the mass of a ruler using torque. In the second and third section, you will use newtons second law for rotational objects to calculate the tension required to hold the ruler stationary.
 </p>
@@ -246,10 +256,9 @@ We will investigate several configurations of a massive beam in static equilibri
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgd948395" class="outline-2">
-<h2 id="orgd948395">Procedure Part 1</h2>
-<div class="outline-text-2" id="text-orgd948395">
+<div id="outline-container-org49b32bd" class="outline-2">
+<h2 id="org49b32bd">Procedure Part 1</h2>
+<div class="outline-text-2" id="text-org49b32bd">
 <p>
 Measure the length of the bar (\(L\)).
 </p>
@@ -264,7 +273,7 @@ Hold the bar and string as shown in the figure (horizontal bar) and read the sca
 </p>
 
 
-<div id="orgbfc2202" class="figure">
+<div id="org5bb3af4" class="figure">
 <p><img src="lab8_fig1.jpg" alt="lab8_fig1.jpg" width="400px" />
 </p>
 </div>
@@ -297,17 +306,16 @@ Measure the mass of the ruler using a scale, and calculate the error in the mass
 </ol>
 </div>
 </div>
-
-<div id="outline-container-org3e5146c" class="outline-2">
-<h2 id="org3e5146c">Procedure Part 2</h2>
-<div class="outline-text-2" id="text-org3e5146c">
+<div id="outline-container-org4a242e0" class="outline-2">
+<h2 id="org4a242e0">Procedure Part 2</h2>
+<div class="outline-text-2" id="text-org4a242e0">
 <ol class="org-ol">
 <li><p>
 Set the bar as shown in the figure (horizontal bar). Add a mass hanger to the end of the bar of mass 500g.
 </p>
 
 
-<div id="orgb32a1b3" class="figure">
+<div id="org74030f1" class="figure">
 <p><img src="lab8_fig2.jpg" alt="lab8_fig2.jpg" width="400px" />
 </p>
 </div></li>
@@ -342,17 +350,16 @@ Use capstone to measure the tension in the string:
 </p>
 </div>
 </div>
-
-<div id="outline-container-orge7b3ceb" class="outline-2">
-<h2 id="orge7b3ceb">Procedure Part 3</h2>
-<div class="outline-text-2" id="text-orge7b3ceb">
+<div id="outline-container-org571f33a" class="outline-2">
+<h2 id="org571f33a">Procedure Part 3</h2>
+<div class="outline-text-2" id="text-org571f33a">
 <ol class="org-ol">
 <li><p>
 Set the bar as shown in the figure. You will need to move the metal collar upward until the string is horizontal. Add a mass hanger to the end of the bar with a total mass of 500g.
 </p>
 
 
-<div id="org1d2c251" class="figure">
+<div id="org9427e33" class="figure">
 <p><img src="lab8_fig3.jpg" alt="lab8_fig3.jpg" width="400px" />
 </p>
 </div></li>

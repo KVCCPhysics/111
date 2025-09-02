@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-04-27 Wed 11:03 -->
+<!-- 2025-09-02 Tue 01:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Lab 06 - Momentum</title>
 <meta name="author" content="Patrick Malsom" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -191,30 +191,41 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
 <style type="text/css"> blockquote {background:#eee; padding: 3px 10px; border: 1px solid; }</style>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -226,22 +237,21 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf37d99c">Trial 1: Elastic collision between equal masses</a></li>
-<li><a href="#orge235ed5">Trial 2: Perfectly inelastic collision between equal masses</a></li>
-<li><a href="#org6538f02">Trial 3: Elastic collision with \(m_1 > m_2\)</a></li>
-<li><a href="#orgfa6edb8">Trial 4: Elastic collision with \(m_1 < m_2\)</a></li>
-<li><a href="#orgce44137">Trial 5: Perfectly inelastic collision with \(m_1 > m_2\)</a></li>
-<li><a href="#org3f7c7e1">Trial 6: Elastic collision with end of track</a></li>
+<li><a href="#orgf0ec13f">Trial 1: Elastic collision between equal masses</a></li>
+<li><a href="#orgf0a271b">Trial 2: Perfectly inelastic collision between equal masses</a></li>
+<li><a href="#org1bf9eb8">Trial 3: Elastic collision with \(m_1 > m_2\)</a></li>
+<li><a href="#org230a90f">Trial 4: Elastic collision with \(m_1 < m_2\)</a></li>
+<li><a href="#org62baa58">Trial 5: Perfectly inelastic collision with \(m_1 > m_2\)</a></li>
+<li><a href="#orgf231edb">Trial 6: Elastic collision with end of track</a></li>
 </ul>
 </div>
 </div>
 <p>
 The purpose of this laboratory is to examine conservation of momentum and energy in a single dimension. You will have two carts on an air track collide and examine if and when momentum and energy are conserved.
 </p>
-
-<div id="outline-container-orgad43a71" class="outline-4">
-<h4 id="orgad43a71">Procedure</h4>
-<div class="outline-text-4" id="text-orgad43a71">
+<div id="outline-container-org7c9a8fb" class="outline-4">
+<h4 id="org7c9a8fb">Procedure</h4>
+<div class="outline-text-4" id="text-org7c9a8fb">
 <p>
 <b>Important:</b> The carts and tracks are precisely manufactured to have very small friction. This makes the system fragile. Please be careful with the carts and the equipment in this lab!
 </p>
@@ -259,10 +269,9 @@ There are two ends to the air track carts, one creates an elastic collision (end
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgf37d99c" class="outline-2">
-<h2 id="orgf37d99c">Trial 1: Elastic collision between equal masses</h2>
-<div class="outline-text-2" id="text-orgf37d99c">
+<div id="outline-container-orgf0ec13f" class="outline-2">
+<h2 id="orgf0ec13f">Trial 1: Elastic collision between equal masses</h2>
+<div class="outline-text-2" id="text-orgf0ec13f">
 <p>
 \[m_1= \qquad \qquad \qquad \qquad m_2=\qquad \qquad\]
 </p>
@@ -313,10 +322,9 @@ incoming cart has a velocity \(v_{1i}\)?
 </p>
 </div>
 </div>
-
-<div id="outline-container-orge235ed5" class="outline-2">
-<h2 id="orge235ed5">Trial 2: Perfectly inelastic collision between equal masses</h2>
-<div class="outline-text-2" id="text-orge235ed5">
+<div id="outline-container-orgf0a271b" class="outline-2">
+<h2 id="orgf0a271b">Trial 2: Perfectly inelastic collision between equal masses</h2>
+<div class="outline-text-2" id="text-orgf0a271b">
 <p>
 \[m_1= \qquad \qquad \qquad \qquad m_2=\qquad \qquad\]
 </p>
@@ -362,10 +370,9 @@ velocity from cart 1?
 </p>
 </div>
 </div>
-
-<div id="outline-container-org6538f02" class="outline-2">
-<h2 id="org6538f02">Trial 3: Elastic collision with \(m_1 > m_2\)</h2>
-<div class="outline-text-2" id="text-org6538f02">
+<div id="outline-container-org1bf9eb8" class="outline-2">
+<h2 id="org1bf9eb8">Trial 3: Elastic collision with \(m_1 > m_2\)</h2>
+<div class="outline-text-2" id="text-org1bf9eb8">
 <p>
 \[m_1= \qquad \qquad \qquad \qquad m_2=\qquad \qquad\]
 </p>
@@ -412,10 +419,9 @@ less mass?
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgfa6edb8" class="outline-2">
-<h2 id="orgfa6edb8">Trial 4: Elastic collision with \(m_1 < m_2\)</h2>
-<div class="outline-text-2" id="text-orgfa6edb8">
+<div id="outline-container-org230a90f" class="outline-2">
+<h2 id="org230a90f">Trial 4: Elastic collision with \(m_1 < m_2\)</h2>
+<div class="outline-text-2" id="text-org230a90f">
 <p>
 \[m_1= \qquad \qquad \qquad \qquad m_2=\qquad \qquad\]
 </p>
@@ -462,10 +468,9 @@ more mass?
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgce44137" class="outline-2">
-<h2 id="orgce44137">Trial 5: Perfectly inelastic collision with \(m_1 > m_2\)</h2>
-<div class="outline-text-2" id="text-orgce44137">
+<div id="outline-container-org62baa58" class="outline-2">
+<h2 id="org62baa58">Trial 5: Perfectly inelastic collision with \(m_1 > m_2\)</h2>
+<div class="outline-text-2" id="text-org62baa58">
 <p>
 \[m_1= \qquad \qquad \qquad \qquad m_2=\qquad \qquad\]
 </p>
@@ -511,10 +516,9 @@ term is normally used in this class to describe this phenomena?
 </p>
 </div>
 </div>
-
-<div id="outline-container-org3f7c7e1" class="outline-2">
-<h2 id="org3f7c7e1">Trial 6: Elastic collision with end of track</h2>
-<div class="outline-text-2" id="text-org3f7c7e1">
+<div id="outline-container-orgf231edb" class="outline-2">
+<h2 id="orgf231edb">Trial 6: Elastic collision with end of track</h2>
+<div class="outline-text-2" id="text-orgf231edb">
 <p>
 \[m_1=\]
 </p>
